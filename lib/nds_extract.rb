@@ -97,7 +97,7 @@ def movies_with_directors_set(source)
   source.each do |direc|
     name = direc[:name]
     movie = direc[:movies]
-    array << movies_with_director_key(name, movies)
+    array << movies_with_director_key(name, movie)
 
   end
 
