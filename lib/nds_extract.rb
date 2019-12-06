@@ -92,16 +92,16 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
-  new_array = []
+  result = []
 
   source.each do |dir|
     name = dir[:name]
     movie = dir[:movies]
-    new_array << movies_with_director_key(name, movie)
+    result << movies_with_director_key(name, movie)
 
   end
 
-  return new_array
+  return result
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
